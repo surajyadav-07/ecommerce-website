@@ -19,25 +19,27 @@
     width: 100px;
 }
 
+/* Naya Logo Style */
 .logo {
-    background-image: url("amazon_logo.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
     height: 50px;
     width: 100px;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .border {
     border: 1.5px solid transparent;
-    padding: 2px; /* Added slight padding for better hover effect */
+    padding: 2px;
 }
 
 .border:hover {
     border: 1.5px solid white;
 }
 
-/* box 2 */
 .add-first {
     color: #cccccc;
     font-size: 0.85rem;
@@ -46,6 +48,7 @@
 
 .add-sec {
     font-size: 1rem;
+    font-weight: bold;
 }
 
 .add-icon {
@@ -53,14 +56,13 @@
     align-items: center;
 }
 
-/* box 3 */
 .nav-search {
     display: flex;
-    background-color: #febd58; /* Fixed background */
+    background-color: #febd58;
     width: 620px;
     height: 40px;
     border-radius: 4px;
-    overflow: hidden; /* Ensures child elements don't spill out */
+    overflow: hidden;
 }
 
 .nav-search:hover {
@@ -78,7 +80,7 @@
     width: 100%;
     font-size: 1rem;
     border: none;
-    padding-left: 10px; /* Added padding inside input */
+    padding-left: 10px;
     outline: none;
 }
 
@@ -93,17 +95,15 @@
     cursor: pointer;
 }
 
-/* box 4 */
 span {
-    font-size: 0.7rem; /* Fixed typo (was o.7rem) */
+    font-size: 0.7rem;
 }
 
 .nav-sec {
-    font-size: 0.85rem; /* Fixed typo */
+    font-size: 0.85rem;
     font-weight: 700;
 }
 
-/* box 6 */
 .nav-cart i {
     font-size: 30px;
 }
@@ -115,7 +115,6 @@ span {
     align-items: center;
 }
 
-/* pannel */
 .pannel {
     height: 40px ;
     background-color: #222f3d;
@@ -137,11 +136,10 @@ span {
 }
 
 .pannel-deals {
-    font-size: 0.9rem; /* Fixed typo */
+    font-size: 0.9rem;
     font-weight: 700 ;
 }
 
-/* hero section */
 .hero-section {
     background-image: url("hero_image.jpg");
     height: 380px;
@@ -159,7 +157,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.85rem; /* Fixed typo */
+    font-size: 0.85rem;
     width: 80%;
     margin-bottom: 25px;
 }
@@ -169,7 +167,6 @@ span {
     cursor: pointer;
 }
 
-/* shop section */
 .shop-section {
     display: flex;
     flex-wrap: wrap;
@@ -204,7 +201,6 @@ span {
     cursor: pointer;
 }
 
-/* footer */
 footer {
     margin-top: 15px;
 }
@@ -230,7 +226,7 @@ footer {
 
 ul {
     margin-top: 20px;
-    list-style: none; /* Removes bullets */
+    list-style: none;
 }
 
 ul a {
@@ -277,68 +273,60 @@ ul p {
     padding: 5px;
 }
 
-
 /* =======================================================
-   RESPONSIVE DESIGN (MEDIA QUERIES) - 4 DEVICES
+   RESPONSIVE DESIGN (MEDIA QUERIES)
    ======================================================= */
 
-/* 1. Laptops & Small Desktops (max-width: 1200px) */
 @media (max-width: 1200px) {
     .nav-search {
-        width: 500px; /* Thoda chota search bar */
+        width: 500px; 
     }
     .box {
-        width: 31%; /* Ek line mein 3 boxes */
+        width: 31%; 
     }
 }
 
-/* 2. Tablets (max-width: 992px) */
 @media (max-width: 992px) {
     .nav-search {
         width: 350px;
     }
     .nav-address, .nav-return, .pannel-deals {
-        display: none; /* Tablet par jagah bachane ke liye inhe hide kiya */
+        display: none; 
     }
     .pannel-ops {
         width: 100%;
         text-align: center;
     }
     .box {
-        width: 47%; /* Ek line mein 2 boxes */
+        width: 47%; 
     }
     .foot-panel2 {
         height: auto;
-        flex-wrap: wrap; /* Footer items wrap ho jayenge */
+        flex-wrap: wrap; 
         padding-bottom: 30px;
     }
     .foot-panel2 ul {
-        width: 45%; /* Ek line mein 2 lists */
+        width: 45%; 
     }
 }
 
-/* 3. Mobile Phones (max-width: 768px) */
 @media (max-width: 768px) {
     .navbar {
         height: auto;
-        flex-wrap: wrap; /* Navbar break hokar multiple lines banayega */
+        flex-wrap: wrap; 
         padding: 10px 0;
     }
-    
     .nav-search {
         width: 90%; 
-        order: 3; /* Search bar ko mobile mein neeche lane ke liye */
+        order: 3; 
         margin-top: 10px;
     }
-    
     .nav-logo, .nav-signin, .nav-cart {
-        order: 1; /* Inhe upar rakha */
+        order: 1; 
     }
-
     .hero-section {
-        height: 250px; /* Mobile par image ki height kam ki */
+        height: 250px; 
     }
-    
     .hero-message {
         width: 95%;
         font-size: 0.75rem;
@@ -346,33 +334,27 @@ ul p {
         padding: 10px;
         text-align: center;
     }
-
     .shop-section {
         padding: 0 10px;
     }
-
     .box {
-        width: 100%; /* Mobile par box poori screen lega (1 in a row) */
+        width: 100%; 
         margin-top: 15px;
     }
-
     .foot-panel2 {
-        flex-direction: column; /* Mobile footer sidha (vertical) ho jayega */
+        flex-direction: column; 
         align-items: center;
         text-align: center;
     }
-
     .foot-panel2 ul {
         width: 100%;
     }
-
     .foot-panel4 {
         height: auto;
         padding-bottom: 20px;
     }
-
     .pages a {
-        display: block; /* Pages ke links ko alag-alag line me kiya */
+        display: block; 
         margin: 5px 0;
     }
 }
